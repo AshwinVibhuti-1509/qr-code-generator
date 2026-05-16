@@ -10,7 +10,7 @@ st.title("QR Code Generator")
 st.write("Create a custom QR code for any link and download it as a PNG image.")
 st.divider()
 
-st.sidebar.title("QR Setting")
+st.sidebar.title("QR Settings")
 st.sidebar.write("Customize your QR code here.")
 
 url=st.text_input("Enter the URL")
@@ -45,7 +45,8 @@ bg_colour = bg_colour_options[bg_colour_name]
 
 qr_size=st.sidebar.selectbox(
 	"Choose QR size",
-	['Small', 'Medium', 'Large']
+	['Small', 'Medium', 'Large'],
+	index=1
 )
 
 st.sidebar.markdown("""
@@ -98,4 +99,5 @@ if generate_button:
 			mime='image/png'
 		)
 		
-st.write("You entered:", url)
+if url:
+	st.write("You entered:", url)
