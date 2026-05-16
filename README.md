@@ -98,3 +98,9 @@ streamlit run app.py
 
 \- Deploy the app online
 
+## Live Demo
+
+
+
+Try the app here: https://aevum-qr-generator-1509.streamlit.app
+
