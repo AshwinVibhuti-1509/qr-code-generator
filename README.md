@@ -94,7 +94,7 @@ streamlit run app.py
 
 \- Add more colour themes
 
-\- Add an AEVUM-style poster generator
+\- Add a poster generator
 
 \- Deploy the app online
 
